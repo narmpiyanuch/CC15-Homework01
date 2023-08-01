@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyResume</title>
+    <style>
+    form{
+        box-sizing: border-box;
+        border-style: solid ;
+        border-radius: 10px;
+        border-color: gray;
+        padding: 10px 40px;
+        width: 500px;
+        margin-left: 40px;
+    }
+    .name, .email, .gender {
+        margin-bottom: 15px;
+        padding: 4px;
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+        height: 300px;
+        /* overflow: auto; */
+        margin-bottom: 15px;
+    }
+    .send, .clear {
+        margin-bottom: 15px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="education.html"> Education</a> |
+        <a href="work.html"> Work</a> |
+        <a href="contact.html"> Contact</a> |
+     </nav>
+    <hr />
+    <h1>Contact me</h1>
+    <form>
+        <p>Enter your info...</p>
+            <label>
+                Your Name
+                <br><input class="name" type="text" /> <br>
+            </label>        
+            <label>
+                Your E-mail
+                <br><input class="email" type="text" /> <br>
+            </label>
+            <label>
+                Gender <br>
+                <select class="gender" name="Gender">
+                    <option>select..</option>
+                    <option>Female</option>
+                    <option>male</option>
+                </select>
+            </label> <br>
+            <label>
+                Message <br>
+                <textarea name="Message"></textarea>
+            </label> <br>
+            <input class="send" type="submit" value="Send">
+            <input class="clear" type="submit" value="Clear">
+        </form>
+</body>
+</html>
